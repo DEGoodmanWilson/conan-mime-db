@@ -11,6 +11,7 @@ class MimeDbConan(ConanFile):
     license = "https://github.com/jshttp/mime-db/blob/master/LICENSE"
     exports_sources = ["db.json"]
     no_copy_source = True
+    build_policy="missing"
         
     def source(self):
         tools.download("https://cdn.rawgit.com/jshttp/mime-db/v{0}/db.json".format(self.version), 'db.json')
