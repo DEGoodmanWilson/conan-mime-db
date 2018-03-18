@@ -18,3 +18,6 @@ class MimeDbConan(ConanFile):
 
     def package(self):
         self.copy(pattern="db.json", dst="res")
+
+    def package_info(self):
+        self.env_info.MIME_DB_FILE="{0}/db.json".format(self.cpp_info.res_paths[0])
