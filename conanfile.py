@@ -5,7 +5,7 @@ from conans import ConanFile, tools
 
 class MimeDbConan(ConanFile):
     name = "mime-db"
-    version = "1.33.0"
+    version = "1.40.0"
     url = "https://github.com/bincrafters/conan-mime-db"
     description = "Keep it short"
     license = "https://github.com/jshttp/mime-db/blob/master/LICENSE"
